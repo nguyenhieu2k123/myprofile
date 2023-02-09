@@ -23,16 +23,18 @@ export default defineComponent({
 })
 </script>
 
-<style>
+<style lang="scss">
 .bg-avt {
     border-radius: 50%;
     box-shadow: 0px 0px 5px 5px;
+    
+    img {
+            border-radius: 50%;
+            max-width: 500px;
+        }
 }
 
-.bg-avt img {
-    border-radius: 50%;
-    max-width: 500px;
-}
+
 
 .hello-text {
     text-transform: uppercase;
@@ -41,11 +43,11 @@ export default defineComponent({
 .my-name {
     letter-spacing: .8rem;
     line-height: 62px !important;
+    span {
+            font-weight: 700;
+        }
 }
 
-.my-name span {
-    font-weight: 700;
-}
 
 .red {
     color: #ff014f;
